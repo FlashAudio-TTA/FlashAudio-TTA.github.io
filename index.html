@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+<style>
+    .image-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .responsive-image {
+        width: 56%; /* 调整宽度以适应容器 */
+        height: auto; /* 保持图片比例 */
+        object-fit: contain; /* 确保图片不被拉伸 */
+    }
+</style>
 <html class="fontawesome-i2svg-active fontawesome-i2svg-complete">
 
 <head>
@@ -70,29 +82,30 @@
             <div class="container is-max-desktop">
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
-                        <h1 class="title is-1 publication-title">Zero-shot Music Editing <br>with Disentangled Inversion Control</h1>
+                        <h1 class="title is-1 publication-title">FlashAudio: Rectified Flows for Fast and High-fidelity Text-to-Audio Generation</h1>
                         <div class="column has-text-centered">
                         </div>
                     </div>
                 </div>
-                <div class="has-text-centered">
-                    <img src="./image_assets/method.png" width="100%">
+                <div class="image-container">
+                    <img src="./image_assets/structure.png" width="40%" height: auto;>
+                    <img src="./image_assets/rtf-fad.png" class="responsive-image">
                 </div>
                 <div class="column has-text-centered link-container" id="blocks">
                     <div class="publication-links">
                         <span class="link-block">
                         <a href="./index.html#blocks" class="external-link button is-normal" style="font-size: 14px;width: 33%; background-color: #2780e3; color: aliceblue;">
-                        Comparisons with Baselines
+                        Preliminary Analyses
                         </a>
                       </span>
                         <span class="link-block">
-                        <a href="#Ablation1" class="external-link button is-normal" style="font-size: 14px;width: 33%; color: #3273DC;">
-                        Ablation on Disentangled Inversion Technique
+                        <a href="#TTA" class="external-link button is-normal" style="font-size: 14px;width: 33%; color: #3273DC;">
+                        Text-to-Audio Generation
                         </a>
                       </span>
                         <span class="link-block">
-                        <a href="#Ablation2" class="external-link button is-normal" style="font-size: 14px;width: 32%; color: #3273DC;">
-                        Ablation on Attention Control Methods
+                        <a href="#Ablation" class="external-link button is-normal" style="font-size: 14px;width: 32%; color: #3273DC;">
+                        Ablation Studies
                         </a>
                       </span>
                         <!-- <span class="link-block">
@@ -117,93 +130,71 @@
             </div>
         </div>
         <h2 class="title is-3" style="text-align: center;" >Preliminary Analyses</h2>
-        <h3 class="title is-4" style="margin-top: 20px;text-align: center;">Type 0: Change Instrument</h4>
+        <!-- <h3 class="title is-4" style="margin-top: 20px;text-align: center;">Type 0: Change Instrument</h4> -->
         <div id="row0" style="width: 100%;text-align: center;max-width: 100vw;"></div>
         <script>createRow("0")</script>
-        <hr style="margin-top: 20px; margin-bottom: 20px;">
-        <h3 class="title is-4" style="margin-top: 20px;text-align: center;">Type 1: Add Instrument</h4>
-        <div id="row1" style="width: 100%;text-align: center;max-width: 100vw;"></div>
-        <script>createRow("1")</script>
-        <hr style="margin-top: 20px; margin-bottom: 20px;">
-        <h3 class="title is-4" style="margin-top: 20px;text-align: center;">Type 2: Delete Instrument</h4>
-        <div id="row2" style="width: 100%;text-align: center;max-width: 100vw;"></div>
-        <script>createRow("2")</script>
-        <hr style="margin-top: 20px; margin-bottom: 20px;">
-        <h3 class="title is-4" style="margin-top: 20px;text-align: center;">Type 3: Change Genre</h4>
-        <div id="row3" style="width: 100%;text-align: center;max-width: 100vw;"></div>
-        <script>createRow("3")</script>
-        <hr style="margin-top: 20px; margin-bottom: 20px;">
-        <h3 class="title is-4" style="margin-top: 20px;text-align: center;">Type 4: Change Attribute Mood</h4>
-        <div id="row4" style="width: 100%;text-align: center;max-width: 100vw;"></div>
-        <script>createRow("4")</script>
-        <hr style="margin-top: 20px; margin-bottom: 20px;">
-        <h3 class="title is-4" style="margin-top: 20px;text-align: center;">Type 5: Change Rhythm</h4>
-        <div id="row5" style="width: 100%;text-align: center;max-width: 100vw;"></div>
-        <script>createRow("5")</script>
-        <hr style="margin-top: 20px; margin-bottom: 20px;">
-        <h3 class="title is-4" style="margin-top: 20px;text-align: center;">Type 6: Change Background</h4>
-        <div id="row6" style="width: 100%;text-align: center;max-width: 100vw;"></div>
-        <script>createRow("6")</script>
-        <hr style="margin-top: 20px; margin-bottom: 20px;">
-        <h3 class="title is-4" style="margin-top: 20px;text-align: center;">Type 7: Change Melody</h4>
-        <div id="row7" style="width: 100%;text-align: center;max-width: 100vw;"></div>
-        <script>createRow("7")</script>
-        <hr style="margin-top: 20px; margin-bottom: 20px;">
-        <h3 class="title is-4" style="margin-top: 20px;text-align: center;">Type 8: Extract Instrument</h4>
-        <div id="row8" style="width: 100%;text-align: center;max-width: 100vw;"></div>
-        <script>createRow("8")</script>
+        <!-- <hr style="margin-top: 20px; margin-bottom: 20px;"> -->
 
     </section>
 
-    <section class="hero is-light is-small" id="Ablation1" style="text-align: center;">
+    <section class="hero is-light is-small" id="TTA" style="text-align: center;">
         <hr style="border: none; border-top: 3px solid black; width: 100%; margin-top: 20px; margin-bottom: 20px;">
         <h2 class="title is-3" style="text-align: center;margin-top: 40px;">Performance on text-to-Audio Generation</h2>
         <!--/ Matting. -->
-        <div id="row0dic1"></div>
-        <script>createRowdic1("0")</script>
-        <div id="row10dic1"></div>
-        <script>createRowdic1("10")</script>
-        <div id="row20dic1"></div>
-        <script>createRowdic1("20")</script>
-        <div id="row30dic1"></div>
-        <script>createRowdic1("30")</script>
-        <div id="row40dic1"></div>
-        <script>createRowdic1("40")</script>
-        <div id="row50dic1"></div>
-        <script>createRowdic1("50")</script>
-        <div id="row60dic1"></div>
-        <script>createRowdic1("60")</script>
-        <div id="row70dic1"></div>
-        <script>createRowdic1("70")</script>
-        <div id="row80dic1"></div>
-        <script>createRowdic1("80")</script>
+        <h3 class="title is-4" style="margin-top: 20px;text-align: center;">Multi Steps Generation</h4>
+        <div id="row1" style="width: 100%;text-align: center;max-width: 100vw;"></div>
+        <div id="row0ser2"></div>
+        <script>createRowMul("0")</script>
+        <div id="row2ser2"></div>
+        <div id="row1ser2"></div>
+        <script>createRowMul("1")</script>
+        <script>createRowMul("2")</script>
+        <div id="row3ser2"></div>
+        <script>createRowMul("3")</script>
+        <div id="row4ser2"></div>
+        <script>createRowMul("4")</script>
+        <div id="row5ser2"></div>
+        <hr style="margin-top: 20px; margin-bottom: 20px;">
+        <h3 class="title is-4" style="margin-top: 20px;text-align: center;">Few Steps Generation</h4>
+        <div id="row2" style="width: 100%;text-align: center;max-width: 100vw;"></div>
+        <div id="row0ser3"></div>
+        <script>createRowFew("0")</script>
+        <div id="row1ser3"></div>
+        <script>createRowFew("1")</script>
+        <div id="row2ser3"></div>
+        <script>createRowFew("2")</script>
+        <div id="row3ser3"></div>
+        <script>createRowFew("3")</script>
+        <div id="row4ser3"></div>
+        <script>createRowFew("4")</script>
+   
     </section>
 
 
-    <section class="hero is-light is-small" id="Ablation2" style="text-align: center;">
+    <section class="hero is-light is-small" id="Ablation" style="text-align: center;">
         <hr style="border: none; border-top: 3px solid black; width: 100%; margin-top: 20px; margin-bottom: 20px;">
         <div style="text-align: center;width: 90%;margin-left: auto;margin-right: auto;">
         
         <h2 class="title is-3" style="text-align: center;margin-top: 40px;">Ablation Studies</h2>
         <!--/ Matting. -->
-        <div id="row0dic2" style="width: 100%;text-align: center;max-width: 100vw;"></div>
+        <div id="row0ser4" style="width: 100%;text-align: center;max-width: 100vw;"></div>
         <script>createRowdic2("0")</script>
-        <div id="row10dic2" style="width: 100%;text-align: center;max-width: 100vw;"></div>
-        <script>createRowdic2("10")</script>
-        <div id="row20dic2" style="width: 100%;text-align: center;max-width: 100vw;"></div>
-        <script>createRowdic2("20")</script>
-        <div id="row30dic2" style="width: 100%;text-align: center;max-width: 100vw;"></div>
-        <script>createRowdic2("30")</script>
-        <div id="row40dic2" style="width: 100%;text-align: center;max-width: 100vw;"></div>
-        <script>createRowdic2("40")</script>
-        <div id="row50dic2" style="width: 100%;text-align: center;max-width: 100vw;"></div>
-        <script>createRowdic2("50")</script>
-        <div id="row60dic2" style="width: 100%;text-align: center;max-width: 100vw;"></div>
-        <script>createRowdic2("60")</script>
-        <div id="row70dic2" style="width: 100%;text-align: center;max-width: 100vw;"></div>
-        <script>createRowdic2("70")</script>
-        <div id="row80dic2" style="width: 100%;text-align: center;max-width: 100vw;"></div>
-        <script>createRowdic2("80")</script>
+        <div id="row1ser4" style="width: 100%;text-align: center;max-width: 100vw;"></div>
+        <script>createRowdic2("1")</script>
+        <div id="row2ser4" style="width: 100%;text-align: center;max-width: 100vw;"></div>
+        <script>createRowdic2("2")</script>
+        <div id="row3ser4" style="width: 100%;text-align: center;max-width: 100vw;"></div>
+        <script>createRowdic2("3")</script>
+        <div id="row4ser4" style="width: 100%;text-align: center;max-width: 100vw;"></div>
+        <script>createRowdic2("4")</script>
+        <div id="row5ser4" style="width: 100%;text-align: center;max-width: 100vw;"></div>
+        <script>createRowdic2("5")</script>
+        <div id="row6ser4" style="width: 100%;text-align: center;max-width: 100vw;"></div>
+        <script>createRowdic2("6")</script>
+        <div id="row7ser4" style="width: 100%;text-align: center;max-width: 100vw;"></div>
+        <script>createRowdic2("7")</script>
+        <div id="row8ser4" style="width: 100%;text-align: center;max-width: 100vw;"></div>
+        <script>createRowdic2("8")</script>
         </div>
     </section>
 

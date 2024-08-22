@@ -4,16 +4,8 @@ function createDiv(index) {
     return `
     <div class="columns is-centered" style="width: 90%;margin-left: auto;margin-right: auto;">
         <div class="column" style="width: 6%;">
-            <div class="content">
-                <div class="tab_container">
-                    <audio controls style="width: 100%;">
-                        <source src="./demo/wavs/${index}_src.wav" type="audio/mpeg">
-                        您的浏览器不支持 audio 元素。
-                    </audio>
-                </div>
-            </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}"><strong style="font-size: larger;">Source:</strong>
+                <p style="text-align: center;" id="${index}_ser1"><strong style="font-size: larger;">Caption:</strong>
                 </p>
             </div>
         </div>
@@ -21,13 +13,13 @@ function createDiv(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demo/wavs/${index}_tgt.wav" type="audio/mpeg">
+                        <source src="./demos/demo1/${index}_gt.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}tgt"> <strong style="font-size: larger;">MEDIC:</strong>
+                <p style="text-align: center;" id="${index}"><strong style="font-size: larger;">GT</strong>
                 </p>
             </div>
         </div>
@@ -35,13 +27,13 @@ function createDiv(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demo/wavs/${index}_ddim.wav" type="audio/mpeg">
+                        <source src="./demos/demo1/${index}_scale1.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}ddim"> <strong style="font-size: larger;">DDIM.Inv:</strong>
+                <p style="text-align: center;" id="${index}tgt"> <strong style="font-size: larger;">w/ anchored Scale1</strong>
                 </p>
             </div>
         </div>
@@ -49,13 +41,13 @@ function createDiv(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demo/wavs/${index}_ddpm.wav" type="audio/mpeg">
+                        <source src="./demos/demo1/${index}_scale2.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}ddpm"> <strong style="font-size: larger;">DDPM.Fri:</strong>
+                <p style="text-align: center;" id="${index}ddim"> <strong style="font-size: larger;">w/ anchored Scale2</strong>
                 </p>
             </div>
         </div>
@@ -63,13 +55,127 @@ function createDiv(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demo/wavs/${index}_sdedit.wav" type="audio/mpeg">
+                        <source src="./demos/demo1/${index}_scale3.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}sdedit"> <strong style="font-size: larger;">SDEdit:</strong>
+                <p style="text-align: center;" id="${index}ddpm"> <strong style="font-size: larger;">w/ anchored Scale3</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column" style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/demo1/${index}_scale4.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">w/ anchored Scale4</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column" style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/demo1/${index}_scale5.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}sdedit"> <strong style="font-size: larger;">w/ anchored Scale5</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="columns is-centered" style="width: 90%;margin-left: auto;margin-right: auto;">
+        <div class="column" style="width: 6%;">
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}"><strong style="font-size: larger;"></strong>
+                </p>
+            </div>
+        </div>
+        <div class="column" style="width: 6%;">
+            <div class="content">
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}"><strong style="font-size: larger;"></strong>
+                </p>
+            </div>
+        </div>
+        <div class="column" style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/demo1/${index}_nscale1.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}tgt"> <strong style="font-size: larger;">w/o anchored Scale1</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column" style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/demo1/${index}_nscale2.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}ddim"> <strong style="font-size: larger;">w/o anchored Scale2</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column" style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/demo1/${index}_nscale3.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}ddpm"> <strong style="font-size: larger;">w/o anchored Scale3</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column" style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/demo1/${index}_nscale4.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">w/o anchored Scale4</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column" style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/demo1/${index}_nscale5.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}sdedit"> <strong style="font-size: larger;">w/o anchored Scale5</strong>
                 </p>
             </div>
         </div>
@@ -82,13 +188,13 @@ function createRow(id) {
 // 循环创建10个div
     rowid = "row"+id
     const rowElement = document.getElementById(rowid);
-    for (let i = id*10; i < 5+id*10; i++) {
+    for (let i = 0; i < 5; i++) {
         // 创建div
-        const index = String(i).padStart(6, '0');
+        const index = String(i);
         const div = createDiv(index);
         // 将div添加到页面中，这里假设你要添加到body中
         rowElement.innerHTML += div
-        fetch('./demo/prompt/'+index+'_src.txt')
+        fetch('./demos/demo1/'+index+'_gt.txt')
         .then(response => response.text())
         .then(data => {
           // 使用正则表达式找出所有用[]包裹的文字
@@ -105,29 +211,7 @@ function createRow(id) {
           }
           parts.push(data.slice(lastIndex));
           // 将处理后的文字显示在页面上
-          document.getElementById(index).innerHTML += parts.join('');
-          fetch('./demo/prompt/'+index+'_tgt.txt')
-          .then(response => response.text())
-          .then(data => {
-            // 使用正则表达式找出所有用[]包裹的文字
-            const regex = /\[(.*?)\]/g;
-            let match;
-            const parts = [];
-            let lastIndex = 0;
-            while ((match = regex.exec(data)) !== null) {
-              // 将匹配的文字用<strong style="font-size: larger;">标签包裹起来
-              const marked = `<strong style="font-size: larger;">[${match[1]}]</strong>`;
-              // 将原文中的匹配文字替换为突出显示的文字
-              parts.push(data.slice(lastIndex, match.index), marked);
-              lastIndex = regex.lastIndex;
-            }
-            parts.push(data.slice(lastIndex));
-            // 将处理后的文字显示在页面上
-            document.getElementById(index+'tgt').innerHTML += parts.join('');
-            document.getElementById(index+'ddim').innerHTML += parts.join('');
-            document.getElementById(index+'ddpm').innerHTML += parts.join('');                                    
-            document.getElementById(index+'sdedit').innerHTML += parts.join('');
-          });
+          document.getElementById(index+'_ser1').innerHTML += parts.join('');
         });
     }
 }
@@ -135,21 +219,13 @@ function createRow(id) {
 // module.exports = { createRow };
 
 // 创建一个函数，用于生成HTML字符串
-function createDivdic1(index) {
+function createDivMul(index) {
     // 使用模板字符串生成HTML，其中${index}会被替换为传入的参数
     return `
     <div class="columns is-centered" style="width: 90%;margin-left: auto;margin-right: auto;">
-        <div class="column"  style="width: 6%;">
-            <div class="content">
-                <div class="tab_container">
-                    <audio controls style="width: 100%;">
-                        <source src="./demo/wavs/${index}_src.wav" type="audio/mpeg">
-                        您的浏览器不支持 audio 元素。
-                    </audio>
-                </div>
-            </div>
+        <div class="column" style="width: 6%;">
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}srcdic1"><strong style="font-size: larger;">Source:</strong>
+                <p style="text-align: center;" id="${index}_ser2"><strong style="font-size: larger;">Caption:</strong>
                 </p>
             </div>
         </div>
@@ -157,13 +233,13 @@ function createDivdic1(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demo/wavs/${index}_tgt.wav" type="audio/mpeg">
+                        <source src="./demos/demo2/${index}_gt.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}tgtdic1"> <strong style="font-size: larger;">MEDIC:</strong>
+                <p style="text-align: center;" id="${index}"><strong style="font-size: larger;">GT</strong>
                 </p>
             </div>
         </div>
@@ -171,13 +247,13 @@ function createDivdic1(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demo/ablation/${index}_dic-0.wav" type="audio/mpeg">
+                        <source src="./demos/demo2/${index}_fa1.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}dic0"> <strong style="font-size: larger;">[0,0,0]:</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">FlashAudio</strong>
                 </p>
             </div>
         </div>
@@ -185,13 +261,13 @@ function createDivdic1(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demo/ablation/${index}_dic-1.wav" type="audio/mpeg">
+                        <source src="./demos/demo2/${index}_ag.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}dic1"> <strong style="font-size: larger;">[src, 0, 0]:</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioGen</strong>
                 </p>
             </div>
         </div>
@@ -199,13 +275,13 @@ function createDivdic1(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demo/ablation/${index}_dic-2.wav" type="audio/mpeg">
+                        <source src="./demos/demo2/${index}_maa2.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}dic2"> <strong style="font-size: larger;">[src, src, 0]:</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">Make An Audio 2</strong>
                 </p>
             </div>
         </div>
@@ -213,13 +289,13 @@ function createDivdic1(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demo/ablation/${index}_dic-3.wav" type="audio/mpeg">
+                        <source src="./demos/demo2/${index}_ldm2.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}dic3"> <strong style="font-size: larger;">[src, tgt, 0]:</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLDM 2</strong>
                 </p>
             </div>
         </div>
@@ -227,13 +303,13 @@ function createDivdic1(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demo/ablation/${index}_dic-4.wav" type="audio/mpeg">
+                        <source src="./demos/demo2/${index}_tango.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}dic4"> <strong style="font-size: larger;">[src, 0, src]:</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">Tango 2</strong>
                 </p>
             </div>
         </div>
@@ -241,27 +317,13 @@ function createDivdic1(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demo/ablation/${index}_dic-5.wav" type="audio/mpeg">
+                        <source src="./demos/demo2/${index}_cfm.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}dic5"> <strong style="font-size: larger;">[src, 0, tgt]:</strong>
-                </p>
-            </div>
-        </div>
-        <div class="column"  style="width: 6%;">
-            <div class="content">
-                <div class="tab_container">
-                    <audio controls style="width: 100%;">
-                        <source src="./demo/ablation/${index}_dic-6.wav" type="audio/mpeg">
-                        您的浏览器不支持 audio 元素。
-                    </audio>
-                </div>
-            </div>
-            <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}dic6"> <strong style="font-size: larger;">[src, 0, har]:</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">CFM</strong>
                 </p>
             </div>
         </div>
@@ -270,14 +332,14 @@ function createDivdic1(index) {
 }
 
 // 创建一个函数，用于生成HTML字符串
-function createRowdic1(id) {
+function createRowMul(id) {
 // 循环创建10个div
     rowid = "row"+id
-    const rowElement = document.getElementById(rowid+'dic1');
+    const rowElement = document.getElementById(rowid+'ser2');
     i = id
     // 创建div
-    const index = String(i).padStart(6, '0');
-    const div = createDivdic1(index);
+    const index = String(i);
+    const div = createDivMul(index);
     // 将div添加到页面中，这里假设你要添加到body中
     rowElement.innerHTML += div
     fetch('./demo/prompt/'+index+'_src.txt')
@@ -297,8 +359,8 @@ function createRowdic1(id) {
         }
         parts.push(data.slice(lastIndex));
         // 将处理后的文字显示在页面上
-        document.getElementById(index+'srcdic1').innerHTML += parts.join('');
-        fetch('./demo/prompt/'+index+'_tgt.txt')
+        // document.getElementById(index+'_ser2').innerHTML += parts.join('');
+        fetch('./demos/demo2/'+index+'_gt.txt')
         .then(response => response.text())
         .then(data => {
         // 使用正则表达式找出所有用[]包裹的文字
@@ -315,15 +377,124 @@ function createRowdic1(id) {
         }
         parts.push(data.slice(lastIndex));
         // 将处理后的文字显示在页面上
-        document.getElementById(index+'tgtdic1').innerHTML += parts.join('');
-        document.getElementById(index+'dic0').innerHTML += parts.join('');
-        document.getElementById(index+'dic1').innerHTML += parts.join('');                                   
-        document.getElementById(index+'dic2').innerHTML += parts.join('');
-        document.getElementById(index+'dic3').innerHTML += parts.join('');
-        document.getElementById(index+'dic4').innerHTML += parts.join('');
-        document.getElementById(index+'dic5').innerHTML += parts.join('');
-        document.getElementById(index+'dic6').innerHTML += parts.join('');
+        document.getElementById(index+'_ser2').innerHTML += parts.join('');
         });
+    });
+}
+
+function createDivFew(index) {
+    // 使用模板字符串生成HTML，其中${index}会被替换为传入的参数
+    return `
+    <div class="columns is-centered" style="width: 90%;margin-left: auto;margin-right: auto;">
+        <div class="column" style="width: 6%;">
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}_ser3"><strong style="font-size: larger;">Caption:</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column"  style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/demo3/${index}_gt.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}"><strong style="font-size: larger;">GT</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column"  style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/demo3/${index}_fa2.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">FlashAudio</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column"  style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/demo3/${index}_lcm.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLCM</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column"  style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/demo3/${index}_ctta.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">ConsistencyTTA</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column"  style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/demo3/${index}_ctm.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">SoundCTM</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+    `;
+}
+
+// 创建一个函数，用于生成HTML字符串
+function createRowFew(id) {
+// 循环创建10个div
+    rowid = "row"+id
+    const rowElement = document.getElementById(rowid+'ser3');
+    i = id
+    // 创建div
+    const index = String(i);
+    const div = createDivFew(index);
+    // 将div添加到页面中，这里假设你要添加到body中
+    rowElement.innerHTML += div
+    fetch('./demos/demo3/'+index+'_gt.txt')
+    .then(response => response.text())
+    .then(data => {
+        // 使用正则表达式找出所有用[]包裹的文字
+        const regex = /\[(.*?)\]/g;
+        let match;
+        const parts = [];
+        let lastIndex = 0;
+        while ((match = regex.exec(data)) !== null) {
+        // 将匹配的文字用<strong style="font-size: larger;">标签包裹起来
+        const marked = `<strong style="font-size: larger;"> [${match[1]}]</strong>`;
+        // 将原文中的匹配文字替换为突出显示的文字
+        parts.push(data.slice(lastIndex, match.index), marked);
+        lastIndex = regex.lastIndex;
+        }
+        parts.push(data.slice(lastIndex));
+        // 将处理后的文字显示在页面上
+        document.getElementById(index+'_ser3').innerHTML += parts.join('');
     });
 }
 
@@ -332,16 +503,8 @@ function createDivdic2(index) {
     return `
     <div class="columns is-centered" style="width: 100%;" style="width: 80%;margin-left: auto;margin-right: auto;">
         <div class="column" style="width: 6%;">
-            <div class="content">
-                <div class="tab_container">
-                    <audio controls style="width: 100%;">
-                        <source src="./demo/wavs/${index}_src.wav" type="audio/mpeg">
-                        您的浏览器不支持 audio 元素。
-                    </audio>
-                </div>
-            </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}srcdic2"><strong style="font-size: larger;">Source:</strong>
+                <p style="text-align: center;" id="${index}_ser4"><strong style="font-size: larger;">Caption:</strong>
                 </p>
             </div>
         </div>
@@ -349,13 +512,13 @@ function createDivdic2(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demo/wavs/${index}_tgt.wav" type="audio/mpeg">
+                        <source src="./demos/demo4/${index}_gt.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}tgtdic2"> <strong style="font-size: larger;">MEDIC:</strong>
+                <p style="text-align: center;" id="${index}"><strong style="font-size: larger;">GT</strong>
                 </p>
             </div>
         </div>
@@ -363,13 +526,13 @@ function createDivdic2(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demo/ablation/${index}_dic-cac.wav" type="audio/mpeg">
+                        <source src="./demos/demo4/${index}_1wln.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}diccac"> <strong style="font-size: larger;">w/CAC:</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">1-rf w/ LN</strong>
                 </p>
             </div>
         </div>
@@ -377,13 +540,13 @@ function createDivdic2(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demo/ablation/${index}_dic-msac.wav" type="audio/mpeg">
+                        <source src="./demos/demo4/${index}_1woi.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}dicmsac"> <strong style="font-size: larger;">w/MSAC:</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">1-rf w/o Init</strong>
                 </p>
             </div>
         </div>
@@ -391,13 +554,69 @@ function createDivdic2(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demo/ablation/${index}_dic-wohb.wav" type="audio/mpeg">
+                        <source src="./demos/demo4/${index}_1wu.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}dicwohb"> <strong style="font-size: larger;">w/o HB:</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">1-rf w/ Uniform</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column" style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/demo4/${index}_1womm.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">1-rf w/o Immi</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column" style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/demo4/${index}_2wme.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">2-rf w/ Mix-Exp</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column" style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/demo4/${index}_2wu.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">2-rf w/ Uniform</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column" style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/demo4/${index}_2womm.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified">
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">2-rf w/o Immi</strong>
                 </p>
             </div>
         </div>
@@ -409,14 +628,14 @@ function createDivdic2(index) {
 function createRowdic2(id) {
 // 循环创建10个div
     rowid = "row"+id
-    const rowElement = document.getElementById(rowid+'dic2');
+    const rowElement = document.getElementById(rowid+'ser4');
     i = id
     // 创建div
-    const index = String(i).padStart(6, '0');
+    const index = String(i);
     const div = createDivdic2(index);
     // 将div添加到页面中，这里假设你要添加到body中
     rowElement.innerHTML += div
-    fetch('./demo/prompt/'+index+'_src.txt')
+    fetch('./demos/demo4/'+index+'_gt.txt')
     .then(response => response.text())
     .then(data => {
         // 使用正则表达式找出所有用[]包裹的文字
@@ -433,28 +652,6 @@ function createRowdic2(id) {
         }
         parts.push(data.slice(lastIndex));
         // 将处理后的文字显示在页面上
-        document.getElementById(index+'srcdic2').innerHTML += parts.join('');
-        fetch('./demo/prompt/'+index+'_tgt.txt')
-        .then(response => response.text())
-        .then(data => {
-        // 使用正则表达式找出所有用[]包裹的文字
-        const regex = /\[(.*?)\]/g;
-        let match;
-        const parts = [];
-        let lastIndex = 0;
-        while ((match = regex.exec(data)) !== null) {
-            // 将匹配的文字用<strong style="font-size: larger;">标签包裹起来
-            const marked = `<strong style="font-size: larger;">[${match[1]}]</strong>`;
-            // 将原文中的匹配文字替换为突出显示的文字
-            parts.push(data.slice(lastIndex, match.index), marked);
-            lastIndex = regex.lastIndex;
-        }
-        parts.push(data.slice(lastIndex));
-        // 将处理后的文字显示在页面上
-        document.getElementById(index+'tgtdic2').innerHTML += parts.join('');
-        document.getElementById(index+'diccac').innerHTML += parts.join('');
-        document.getElementById(index+'dicmsac').innerHTML += parts.join('');                                   
-        document.getElementById(index+'dicwohb').innerHTML += parts.join('');
-        });
+        document.getElementById(index+'_ser4').innerHTML += parts.join('');
     });
 }
