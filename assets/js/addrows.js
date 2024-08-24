@@ -261,20 +261,6 @@ function createDivMul(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demos/demo2/${index}_ag.wav" type="audio/mpeg">
-                        您的浏览器不支持 audio 元素。
-                    </audio>
-                </div>
-            </div>
-            <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioGen</strong>
-                </p>
-            </div>
-        </div>
-        <div class="column"  style="width: 6%;">
-            <div class="content">
-                <div class="tab_container">
-                    <audio controls style="width: 100%;">
                         <source src="./demos/demo2/${index}_maa2.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
