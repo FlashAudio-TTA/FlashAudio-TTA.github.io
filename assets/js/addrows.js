@@ -649,7 +649,7 @@ function createDivFewCom(index) {
     <div class="columns is-centered" style="width: 90%;margin-left: auto;margin-right: auto;">
         <div class="column" style="width: 6%;">
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}_ser3"><strong style="font-size: larger;">Caption:</strong>
+                <p style="text-align: center;" id="${index}_com"><strong style="font-size: larger;">Caption:</strong>
                 </p>
             </div>
         </div>
@@ -671,13 +671,13 @@ function createDivFewCom(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demos/PreliminaryAnalyses2/${index}_FlashAudio.wav" type="audio/mpeg">
+                        <source src="./demos/PreliminaryAnalyses2/${index}_2_rf_step1.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">FlashAudio</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">2-RF step1</strong>
                 </p>
             </div>
         </div>
@@ -685,13 +685,55 @@ function createDivFewCom(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demos/PreliminaryAnalyses2/${index}_FlashAudio.wav" type="audio/mpeg">
+                        <source src="./demos/PreliminaryAnalyses2/${index}_2_rf_step2.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">FlashAudio</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">2-RF step2</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column"  style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/PreliminaryAnalyses2/${index}_2_rf_step4.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified" style="margin-top: -20px;">
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">2-RF step4</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column"  style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/PreliminaryAnalyses2/${index}_2_rf_step8.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified" style="margin-top: -20px;">
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">2-RF step8</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column"  style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/PreliminaryAnalyses2/${index}_2_rf_step16.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified" style="margin-top: -20px;">
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">2-RF step16</strong>
                 </p>
             </div>
         </div>
@@ -699,7 +741,13 @@ function createDivFewCom(index) {
     <div class="columns is-centered" style="width: 90%;margin-left: auto;margin-right: auto;">
         <div class="column" style="width: 6%;">
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}_ser3"><strong style="font-size: larger;">Caption:</strong>
+                <p style="text-align: center;" ><strong style="font-size: larger;"> </strong>
+                </p>
+            </div>
+        </div>
+        <div class="column"  style="width: 6%;">
+            <div class="has-text-justified" style="margin-top: -20px;">
+                <p style="text-align: center;"><strong style="font-size: larger;"></strong>
                 </p>
             </div>
         </div>
@@ -707,13 +755,13 @@ function createDivFewCom(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demos/Fewstep/${index}_gt.wav" type="audio/mpeg">
+                        <source src="./demos/PreliminaryAnalyses2/${index}_audiolcm_step1.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"><strong style="font-size: larger;">GT</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLcm step1</strong>
                 </p>
             </div>
         </div>
@@ -721,13 +769,13 @@ function createDivFewCom(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demos/Fewstep/${index}_FlashAudio.wav" type="audio/mpeg">
+                        <source src="./demos/PreliminaryAnalyses2/${index}_audiolcm_step2.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">FlashAudio</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLcm step2</strong>
                 </p>
             </div>
         </div>
@@ -735,13 +783,13 @@ function createDivFewCom(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demos/Fewstep/${index}_AudioLCM.wav" type="audio/mpeg">
+                        <source src="./demos/PreliminaryAnalyses2/${index}_audiolcm_step4.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLCM</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLcm step4</strong>
                 </p>
             </div>
         </div>
@@ -749,13 +797,13 @@ function createDivFewCom(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demos/Fewstep/${index}_SoundCTM.wav" type="audio/mpeg">
+                        <source src="./demos/PreliminaryAnalyses2/${index}_audiolcm_step8.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">SoundCTM</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLcm step8</strong>
                 </p>
             </div>
         </div>
@@ -763,13 +811,97 @@ function createDivFewCom(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demos/Fewstep/${index}_CTTA.wav" type="audio/mpeg">
+                        <source src="./demos/PreliminaryAnalyses2/${index}_audiolcm_step16.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">ConsistencyTTA</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLcm step16</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="columns is-centered" style="width: 90%;margin-left: auto;margin-right: auto;">
+        <div class="column" style="width: 6%;">
+            <div class="has-text-justified">
+                <p style="text-align: center;" ><strong style="font-size: larger;"> </strong>
+                </p>
+            </div>
+        </div>
+        <div class="column"  style="width: 6%;">
+            <div class="has-text-justified" style="margin-top: -20px;">
+                <p style="text-align: center;"><strong style="font-size: larger;"></strong>
+                </p>
+            </div>
+        </div>
+        <div class="column"  style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/PreliminaryAnalyses2/${index}_cfm_step1.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified" style="margin-top: -20px;">
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">CFM step1</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column"  style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/PreliminaryAnalyses2/${index}_cfm_step2.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified" style="margin-top: -20px;">
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">CFM step2</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column"  style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/PreliminaryAnalyses2/${index}_xfm_step4.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified" style="margin-top: -20px;">
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">CFM step4</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column"  style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/PreliminaryAnalyses2/${index}_cfm_step8.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified" style="margin-top: -20px;">
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">CFM step8</strong>
+                </p>
+            </div>
+        </div>
+        <div class="column"  style="width: 6%;">
+            <div class="content">
+                <div class="tab_container">
+                    <audio controls style="width: 100%;">
+                        <source src="./demos/PreliminaryAnalyses2/${index}_cfm_step16.wav" type="audio/mpeg">
+                        您的浏览器不支持 audio 元素。
+                    </audio>
+                </div>
+            </div>
+            <div class="has-text-justified" style="margin-top: -20px;">
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">CFM step16</strong>
                 </p>
             </div>
         </div>
@@ -788,7 +920,7 @@ function createRowFewCom(id) {
     const div = createDivFewCom(index);
     // 将div添加到页面中，这里假设你要添加到body中
     rowElement.innerHTML += div
-    fetch('./demos/Fewstep/'+index+'_gt.txt')
+    fetch('./demos/PreliminaryAnalyses2/'+index+'_gt.txt')
     .then(response => response.text())
     .then(data => {
         // 使用正则表达式找出所有用[]包裹的文字
@@ -805,6 +937,6 @@ function createRowFewCom(id) {
         }
         parts.push(data.slice(lastIndex));
         // 将处理后的文字显示在页面上
-        document.getElementById(index+'_ser3').innerHTML += parts.join('');
+        document.getElementById(index+'_com').innerHTML += parts.join('');
     });
 }
