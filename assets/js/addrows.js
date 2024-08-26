@@ -867,7 +867,7 @@ function createDivFewCom(index) {
             <div class="content">
                 <div class="tab_container">
                     <audio controls style="width: 100%;">
-                        <source src="./demos/PreliminaryAnalyses2/${index}_xfm_step4.wav" type="audio/mpeg">
+                        <source src="./demos/PreliminaryAnalyses2/${index}_cfm_step4.wav" type="audio/mpeg">
                         您的浏览器不支持 audio 元素。
                     </audio>
                 </div>
