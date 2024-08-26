@@ -95,12 +95,13 @@
                     <div class="publication-links">
                         <span class="link-block">
                         <a href="./index.html#blocks" class="external-link button is-normal" style="font-size: 14px;width: 33%; background-color: #2780e3; color: aliceblue;">
-                        Preliminary Analyses
+                            Text-to-Audio Generation
+
                         </a>
                       </span>
                         <span class="link-block">
                         <a href="#TTA" class="external-link button is-normal" style="font-size: 14px;width: 33%; color: #3273DC;">
-                        Text-to-Audio Generation
+                            Preliminary Analyses
                         </a>
                       </span>
                         <span class="link-block">
@@ -118,7 +119,9 @@
             </div>
         </div>
     </section>
-    <section class="hero is-light is-small" style="text-align: center;">
+
+
+    <section class="hero is-light is-small" id="TTA" style="text-align: center;">
         <div class="hero-body">
             <div class="container is-max-desktop has-text-centered">
                 <div class="has-text-justified">
@@ -129,19 +132,9 @@
                 </div>
             </div>
         </div>
-        <h2 class="title is-3" style="text-align: center;" >Preliminary Analyses</h2>
-        <!-- <h3 class="title is-4" style="margin-top: 20px;text-align: center;">Type 0: Change Instrument</h4> -->
-        <div id="row0" style="width: 100%;text-align: center;max-width: 100vw;"></div>
-        <script>createRow("0")</script>
-        <!-- <hr style="margin-top: 20px; margin-bottom: 20px;"> -->
-
-    </section>
-
-    <section class="hero is-light is-small" id="TTA" style="text-align: center;">
-        <hr style="border: none; border-top: 3px solid black; width: 100%; margin-top: 20px; margin-bottom: 20px;">
         <h2 class="title is-3" style="text-align: center;margin-top: 40px;">Performance on text-to-Audio Generation</h2>
         <!--/ Matting. -->
-        <h3 class="title is-4" style="margin-top: 20px;text-align: center;">Multi Steps Generation</h4>
+        <h3 class="title is-4" style="margin-top: 20px;text-align: center;">Full-step Comparisons</h4>
         <div id="row1" style="width: 100%;text-align: center;max-width: 100vw;"></div>
         <div id="row0ser2"></div>
         <script>createRowMul("0")</script>
@@ -155,7 +148,7 @@
         <script>createRowMul("4")</script>
         <div id="row5ser2"></div>
         <hr style="margin-top: 20px; margin-bottom: 20px;">
-        <h3 class="title is-4" style="margin-top: 20px;text-align: center;">Few Steps Generation</h4>
+        <h3 class="title is-4" style="margin-top: 20px;text-align: center;">One-step Comparisons</h4>
         <div id="row2" style="width: 100%;text-align: center;max-width: 100vw;"></div>
         <div id="row0ser3"></div>
         <script>createRowFew("0")</script>
@@ -170,6 +163,15 @@
    
     </section>
 
+    <section class="hero is-light is-small" style="text-align: center;">
+        <hr style="border: none; border-top: 3px solid black; width: 100%; margin-top: 20px; margin-bottom: 20px;">
+        <h2 class="title is-3" style="text-align: center;" >Preliminary Analyses</h2>
+        <!-- <h3 class="title is-4" style="margin-top: 20px;text-align: center;">Type 0: Change Instrument</h4> -->
+        <div id="row0" style="width: 100%;text-align: center;max-width: 100vw;"></div>
+        <script>createRow("0")</script>
+        <!-- <hr style="margin-top: 20px; margin-bottom: 20px;"> -->
+
+    </section>
 
     <section class="hero is-light is-small" id="Ablation" style="text-align: center;">
         <hr style="border: none; border-top: 3px solid black; width: 100%; margin-top: 20px; margin-bottom: 20px;">
