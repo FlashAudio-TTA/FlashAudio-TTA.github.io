@@ -33,7 +33,7 @@ function createDiv(index) {
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}tgt"> <strong style="font-size: larger;">w/ anchored Scale1</strong>
+                <p style="text-align: center;" id="${index}tgt"> <strong style="font-size: larger;">w/ anchored Scale 1</strong>
                 </p>
             </div>
         </div>
@@ -47,7 +47,7 @@ function createDiv(index) {
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}ddim"> <strong style="font-size: larger;">w/ anchored Scale2</strong>
+                <p style="text-align: center;" id="${index}ddim"> <strong style="font-size: larger;">w/ anchored Scale 2</strong>
                 </p>
             </div>
         </div>
@@ -61,7 +61,7 @@ function createDiv(index) {
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}ddpm"> <strong style="font-size: larger;">w/ anchored Scale3</strong>
+                <p style="text-align: center;" id="${index}ddpm"> <strong style="font-size: larger;">w/ anchored Scale 3</strong>
                 </p>
             </div>
         </div>
@@ -75,7 +75,7 @@ function createDiv(index) {
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">w/ anchored Scale4</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">w/ anchored Scale 4</strong>
                 </p>
             </div>
         </div>
@@ -89,7 +89,7 @@ function createDiv(index) {
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}sdedit"> <strong style="font-size: larger;">w/ anchored Scale5</strong>
+                <p style="text-align: center;" id="${index}sdedit"> <strong style="font-size: larger;">w/ anchored Scale 5</strong>
                 </p>
             </div>
         </div>
@@ -119,7 +119,7 @@ function createDiv(index) {
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}tgt"> <strong style="font-size: larger;">w/o anchored Scale1</strong>
+                <p style="text-align: center;" id="${index}tgt"> <strong style="font-size: larger;">w/o anchored Scale 1</strong>
                 </p>
             </div>
         </div>
@@ -133,7 +133,7 @@ function createDiv(index) {
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}ddim"> <strong style="font-size: larger;">w/o anchored Scale2</strong>
+                <p style="text-align: center;" id="${index}ddim"> <strong style="font-size: larger;">w/o anchored Scale 2</strong>
                 </p>
             </div>
         </div>
@@ -147,7 +147,7 @@ function createDiv(index) {
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}ddpm"> <strong style="font-size: larger;">w/o anchored Scale3</strong>
+                <p style="text-align: center;" id="${index}ddpm"> <strong style="font-size: larger;">w/o anchored Scale 3</strong>
                 </p>
             </div>
         </div>
@@ -161,7 +161,7 @@ function createDiv(index) {
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">w/o anchored Scale4</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">w/o anchored Scale 4</strong>
                 </p>
             </div>
         </div>
@@ -175,7 +175,7 @@ function createDiv(index) {
                 </div>
             </div>
             <div class="has-text-justified">
-                <p style="text-align: center;" id="${index}sdedit"> <strong style="font-size: larger;">w/o anchored Scale5</strong>
+                <p style="text-align: center;" id="${index}sdedit"> <strong style="font-size: larger;">w/o anchored Scale 5</strong>
                 </p>
             </div>
         </div>
