@@ -295,7 +295,7 @@ function createDivMul(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -25px;">
-                <p style="text-align: center;" > <strong style="font-size: larger;">Make An Audio 2 (24steps)</strong>
+                <p style="text-align: center;" > <strong style="font-size: larger;">Make An Audio 2 (100steps)</strong>
                 </p>
             </div>
         </div>
@@ -309,7 +309,7 @@ function createDivMul(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -25px;">
-                <p style="text-align: center;" > <strong style="font-size: larger;">AudioLDM 2 (200steps)</strong>
+                <p style="text-align: center;" > <strong style="font-size: larger;">AudioLDM 2 (100steps)</strong>
                 </p>
             </div>
         </div>

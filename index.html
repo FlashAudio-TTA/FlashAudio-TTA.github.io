@@ -6,7 +6,7 @@
     }
     
     .responsive-image {
-        width: 56%; /* 调整宽度以适应容器 */
+        width: 47%; /* 调整宽度以适应容器 */
         height: auto; /* 保持图片比例 */
         object-fit: contain; /* 确保图片不被拉伸 */
     }
@@ -88,20 +88,19 @@
                     </div>
                 </div>
                 <div class="image-container">
-                    <img src="./image_assets/structure.png" width="40%" height: auto;>
-                    <img src="./image_assets/rtf-fad.png" class="responsive-image">
+                    <img src="./image_assets/structure.png" width="47%" height: auto;>
+                    <img src="./image_assets/rtf-fad.png" width="20%" class="responsive-image">
                 </div>
                 <div class="column has-text-centered link-container" id="blocks">
                     <div class="publication-links">
                         <span class="link-block">
                         <a href="./index.html#blocks" class="external-link button is-normal" style="font-size: 14px;width: 33%; background-color: #2780e3; color: aliceblue;">
-                            Text-to-Audio Generation
-
+                        Text-to-Audio Generation
                         </a>
                       </span>
                         <span class="link-block">
                         <a href="#TTA" class="external-link button is-normal" style="font-size: 14px;width: 33%; color: #3273DC;">
-                            Preliminary Analyses
+                        Preliminary Analyses
                         </a>
                       </span>
                         <span class="link-block">
@@ -124,7 +123,7 @@
     <section class="hero is-light is-small" id="TTA" style="text-align: center;">
         <div class="hero-body">
             <div class="container is-max-desktop has-text-centered">
-                <div class="has-text-justified">
+                <div class="has-text-justified" style="font-size: 20px;">
                     <p>
                         Recent advancements in latent diffusion models (LDMs) have markedly enhanced text-to-audio generation, yet their iterative sampling processes impose substantial computational demands, limiting practical deployment. While recent methods utilizing consistency-based distillation aim to achieve few-step or single-step inference, their one-step performance is constrained by curved trajectories, preventing them from surpassing traditional diffusion models. In this work, we introduce FlashAudio with rectified flows to learn straight flow for fast simulation. To alleviate the inefficient timesteps allocation and suboptimal distribution of noise, FlashAudio optimizes the time distribution of rectified flow with Bifocal Distribution and proposes immiscible flow to minimize the total distance of data-noise pairs in a batch vias assignment. Furthermore, to address the amplified accumulation error caused by the classifier-free guidance (CFG), we propose Anchored Optimization, which refines the guidance scale by anchoring it to a reference trajectory. Experimental results on text-to-audio generation demonstrate that FlashAudio's one-step generation performance surpasses the diffusion-based models with hundreds of sampling steps on audio quality and enables a sampling speed of 400x faster than real-time on a single NVIDIA 4090Ti GPU.
                     </p>
