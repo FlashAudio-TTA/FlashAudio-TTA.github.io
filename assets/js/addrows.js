@@ -253,7 +253,7 @@ function createDivMul(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" > <strong style="font-size: larger;">FlashAudio (24steps)</strong>
+                <p style="text-align: center;" > <strong style="font-size: larger;">FlashAudio (4steps)</strong>
                 </p>
             </div>
         </div>
