@@ -328,43 +328,34 @@ function createRowMul(id) {
     const div = createDivMul(index);
     // 将div添加到页面中，这里假设你要添加到body中
     rowElement.innerHTML += div
-    fetch('./demo/prompt/'+index+'_src.txt')
+
+    // 使用正则表达式找出所有用[]包裹的文字
+    const regex = /\[(.*?)\]/g;
+    let match;
+    const parts = [];
+    let lastIndex = 0;
+
+    // 将处理后的文字显示在页面上
+    // document.getElementById(index+'_ser2').innerHTML += parts.join('');
+    fetch('./demos/Multistep/'+index+'_gt.txt')
     .then(response => response.text())
     .then(data => {
-        // 使用正则表达式找出所有用[]包裹的文字
-        const regex = /\[(.*?)\]/g;
-        let match;
-        const parts = [];
-        let lastIndex = 0;
-        while ((match = regex.exec(data)) !== null) {
+    // 使用正则表达式找出所有用[]包裹的文字
+    const regex = /\[(.*?)\]/g;
+    let match;
+    const parts = [];
+    let lastIndex = 0;
+    while ((match = regex.exec(data)) !== null) {
         // 将匹配的文字用<strong style="font-size: larger;">标签包裹起来
-        const marked = `<strong style="font-size: larger;"> [${match[1]}]</strong>`;
+        const marked = `<strong style="font-size: larger;">[${match[1]}]</strong>`;
         // 将原文中的匹配文字替换为突出显示的文字
         parts.push(data.slice(lastIndex, match.index), marked);
         lastIndex = regex.lastIndex;
-        }
-        parts.push(data.slice(lastIndex));
-        // 将处理后的文字显示在页面上
-        // document.getElementById(index+'_ser2').innerHTML += parts.join('');
-        fetch('./demos/Multistep/'+index+'_gt.txt')
-        .then(response => response.text())
-        .then(data => {
-        // 使用正则表达式找出所有用[]包裹的文字
-        const regex = /\[(.*?)\]/g;
-        let match;
-        const parts = [];
-        let lastIndex = 0;
-        while ((match = regex.exec(data)) !== null) {
-            // 将匹配的文字用<strong style="font-size: larger;">标签包裹起来
-            const marked = `<strong style="font-size: larger;">[${match[1]}]</strong>`;
-            // 将原文中的匹配文字替换为突出显示的文字
-            parts.push(data.slice(lastIndex, match.index), marked);
-            lastIndex = regex.lastIndex;
-        }
-        parts.push(data.slice(lastIndex));
-        // 将处理后的文字显示在页面上
-        document.getElementById(index+'_ser2').innerHTML += parts.join('');
-        });
+    }
+    parts.push(data.slice(lastIndex));
+    // 将处理后的文字显示在页面上
+    document.getElementById(index+'_ser2').innerHTML += parts.join('');
+
     });
 }
 
