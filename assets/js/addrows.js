@@ -253,7 +253,7 @@ function createDivMul(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" > <strong style="font-size: larger;">FlashAudio (4steps)</strong>
+                <p style="text-align: center;" > <strong style="font-size: larger;">FlashAudio (4 steps)</strong>
                 </p>
             </div>
         </div>
@@ -267,7 +267,7 @@ function createDivMul(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" > <strong style="font-size: larger;">CFM (24steps)</strong>
+                <p style="text-align: center;" > <strong style="font-size: larger;">CFM (24 steps)</strong>
                 </p>
             </div>
         </div>
@@ -281,7 +281,7 @@ function createDivMul(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" > <strong style="font-size: larger;">Tango 2 (100steps)</strong>
+                <p style="text-align: center;" > <strong style="font-size: larger;">Tango 2 (100 steps)</strong>
                 </p>
             </div>
         </div>
@@ -295,7 +295,7 @@ function createDivMul(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -25px;">
-                <p style="text-align: center;" > <strong style="font-size: larger;">Make An Audio 2 (100steps)</strong>
+                <p style="text-align: center;" > <strong style="font-size: larger;">Make An Audio 2 (100 steps)</strong>
                 </p>
             </div>
         </div>
@@ -309,7 +309,7 @@ function createDivMul(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -25px;">
-                <p style="text-align: center;" > <strong style="font-size: larger;">AudioLDM 2 (100steps)</strong>
+                <p style="text-align: center;" > <strong style="font-size: larger;">AudioLDM 2 (100 steps)</strong>
                 </p>
             </div>
         </div>
@@ -668,7 +668,7 @@ function createDivFewCom(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">2-RF step1</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">2-RF step 1</strong>
                 </p>
             </div>
         </div>
@@ -682,7 +682,7 @@ function createDivFewCom(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">2-RF step2</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">2-RF step 2</strong>
                 </p>
             </div>
         </div>
@@ -696,7 +696,7 @@ function createDivFewCom(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">2-RF step4</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">2-RF step 4</strong>
                 </p>
             </div>
         </div>
@@ -710,7 +710,7 @@ function createDivFewCom(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">2-RF step8</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">2-RF step 8</strong>
                 </p>
             </div>
         </div>
@@ -724,7 +724,7 @@ function createDivFewCom(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">2-RF step16</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">2-RF step 16</strong>
                 </p>
             </div>
         </div>
@@ -752,7 +752,7 @@ function createDivFewCom(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLcm step1</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLcm step 1</strong>
                 </p>
             </div>
         </div>
@@ -766,7 +766,7 @@ function createDivFewCom(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLcm step2</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLcm step 2</strong>
                 </p>
             </div>
         </div>
@@ -780,7 +780,7 @@ function createDivFewCom(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLcm step4</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLcm step 4</strong>
                 </p>
             </div>
         </div>
@@ -794,7 +794,7 @@ function createDivFewCom(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLcm step8</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLcm step 8</strong>
                 </p>
             </div>
         </div>
@@ -808,7 +808,7 @@ function createDivFewCom(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLcm step16</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLcm step 16</strong>
                 </p>
             </div>
         </div>
@@ -836,7 +836,7 @@ function createDivFewCom(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">CFM step1</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">CFM step 1</strong>
                 </p>
             </div>
         </div>
@@ -850,7 +850,7 @@ function createDivFewCom(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">CFM step2</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">CFM step 2</strong>
                 </p>
             </div>
         </div>
@@ -864,7 +864,7 @@ function createDivFewCom(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">CFM step4</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">CFM step 4</strong>
                 </p>
             </div>
         </div>
@@ -878,7 +878,7 @@ function createDivFewCom(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">CFM step8</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">CFM step 8</strong>
                 </p>
             </div>
         </div>
@@ -892,7 +892,7 @@ function createDivFewCom(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">CFM step16</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">CFM step 16</strong>
                 </p>
             </div>
         </div>
