@@ -752,7 +752,7 @@ function createDivFewCom(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLcm step 1</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLCM step 1</strong>
                 </p>
             </div>
         </div>
@@ -766,7 +766,7 @@ function createDivFewCom(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLcm step 2</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLCM step 2</strong>
                 </p>
             </div>
         </div>
@@ -780,7 +780,7 @@ function createDivFewCom(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLcm step 4</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLCM step 4</strong>
                 </p>
             </div>
         </div>
@@ -794,7 +794,7 @@ function createDivFewCom(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLcm step 8</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLCM step 8</strong>
                 </p>
             </div>
         </div>
@@ -808,7 +808,7 @@ function createDivFewCom(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLcm step 16</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLCM step 16</strong>
                 </p>
             </div>
         </div>
