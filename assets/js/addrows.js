@@ -407,7 +407,7 @@ function createDivFew(index) {
                 </div>
             </div>
             <div class="has-text-justified" style="margin-top: -20px;">
-                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLCM</strong>
+                <p style="text-align: center;" id="${index}"> <strong style="font-size: larger;">AudioLCM (2 steps)</strong>
                 </p>
             </div>
         </div>
